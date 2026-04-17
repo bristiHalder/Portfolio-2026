@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>MongoDB</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12 1.85C11.476 1.85 3.9 5.611 3.9 14.15c0 8.539 7.582 7.883 8.1 8 .518.117 8.1.539 8.1-8 0-8.539-7.576-12.3-8.1-12.3zm.113 20.415s-.669-.235-1.013-1.41c-.345-1.176-.345-9.41-.345-9.41s-.288-.941.345-2.293c.518-1.116 1.185-1.763 1.185-1.763l-.059 13.756c0 .001-.03.763-.113 1.12z" fill="#00ED64" fill-rule="nonzero"/>
+    </g>
+</svg> 

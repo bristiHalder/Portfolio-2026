@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>JWT</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M10.2 0v6l1.8 1.8L13.8 6V0h-3.6zM7.8 6.3L3 11.1l2.7 2.7 4.8-4.8-2.7-2.7zm8.4 0l-2.7 2.7 4.8 4.8 2.7-2.7-4.8-4.8zM10.2 9.8v8.4h3.6V9.8l-1.8 1.8-1.8-1.8zm-7.2 4.8v3.6H9l1.8-1.8-1.8-1.8H3zm18 0h-6l-1.8 1.8 1.8 1.8H21v-3.6zM9 21l-6 3 6 3 6-3-6-3zm6 0l6 3-6 3-6-3 6-3z" fill="#000000" fill-rule="nonzero"/>
+    </g>
+</svg> 
