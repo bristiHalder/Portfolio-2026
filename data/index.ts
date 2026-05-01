@@ -89,35 +89,35 @@ export const projects = [
   },
   {
     id: 3,
-    title: 'RAG Chatbot with LangChain & FAISS',
-    des: 'Developed a scalable RAG system with LangChain and FAISS for domain-specific knowledge retrieval, with FastAPI endpoints serving 10k+ queries.',
+    title: 'Real-Time Voice Sales Assistant (RAG + FastAPI)',
+    des: 'Developed an AI-powered real-time voice sales assistant integrating speech-to-text, text-to-speech, and Retrieval-Augmented Generation (RAG) for context-aware conversations. Built scalable FastAPI endpoints for call handling, conversation tracking, and response generation, leveraging FAISS for semantic search and LLMs for dynamic sales interactions with sub-2s latency.',
     img: '/projects/multimodal_rag.webp',
     iconLists: ['/py.svg', '/fastapi.svg', '/openai.svg', '/faiss.svg', '/langchain.svg'],
-    link: 'https://github.com/bristiHalder',
+    link: 'https://github.com/bristiHalder/Real-Time-Voice-Sales-Assistant',
   },
   {
     id: 4,
-    title: 'Data Analysis & Visualization Dashboard',
-    des: 'Built an interactive data dashboard with Python, Pandas, and Matplotlib to uncover business insights from large datasets with visual storytelling.',
-    img: '/projects/hr_management.webp',
-    iconLists: ['/py.svg', '/numpy.svg', '/mongo.svg', '/fastapi.svg', '/re.svg'],
-    link: 'https://github.com/bristiHalder',
+    title: 'Handwriting Recognition System with OCR',
+    des: 'Developed a deep learning-based handwriting recognition system using the IAM dataset, implementing image preprocessing, segmentation, and neural network-based text extraction for converting handwritten text into digital format. Built an end-to-end OCR pipeline leveraging feature extraction and sequence modeling to improve recognition accuracy on diverse handwriting styles.',
+    img: '/projects/handwriting_ocr.webp',
+    iconLists: ['/py.svg', '/tensorflow.svg', '/opencv.svg', '/keras.svg'],
+    link: 'https://github.com/bristiHalder/A-Handwriting-Recognition-System-with-OCR',
   },
   {
     id: 5,
-    title: 'GenAI SaaS Chatbot Platform',
-    des: 'Created a production-grade SaaS chatbot frontend with Next.js and Aceternity UI, integrating OpenAI and LangChain RAG pipelines for client knowledge retrieval.',
-    img: '/projects/image_stitching.webp',
-    iconLists: ['/next.svg', '/ts.svg', '/openai.svg', '/langchain.svg', '/re.svg'],
-    link: 'https://github.com/bristiHalder',
+    title: 'Restaurant Reservation & Ordering Web Application',
+    des: 'Developed a full-stack restaurant web application enabling users to browse menus, place orders, and make table reservations through an interactive UI. Built responsive frontend using HTML, CSS, and JavaScript, and implemented backend services with Node.js, Express.js, and MongoDB for handling user data, bookings, and order management.',
+    img: '/projects/restaurant_website.webp',
+    iconLists: ['/html.svg', '/css.svg', '/js.svg', '/node.svg', '/mongodb.svg'],
+    link: 'https://github.com/bristiHalder/Reservation-Restaurant-Website',
   },
   {
     id: 6,
-    title: 'GCP Data Pipeline with PySpark & SQL',
-    des: 'Engineered PySpark and SQL pipelines at Walmart Global Tech to process large-scale data on GCP, improving storage efficiency by 42%.',
-    img: '/projects/tomato.webp',
-    iconLists: ['/py.svg', '/dock.svg', '/fastapi.svg', '/mongo.svg', '/numpy.svg'],
-    link: 'https://github.com/bristiHalder',
+    title: 'Interactive Photo Editor Application',
+    des: 'Developed an interactive photo editing application enabling real-time image manipulation including drawing, filters, text overlays, and sticker integration. Implemented features like undo/redo, brush customization, and dynamic UI interactions using image processing techniques, enhancing user experience for intuitive editing workflows.',
+    img: '/projects/photo_editor.webp',
+    iconLists: ['/py.svg', '/opencv.svg', '/js.svg'],
+    link: 'https://github.com/bristiHalder/Photo-Editor',
   },
 ];
 
@@ -126,16 +126,16 @@ export const testimonials = [
     quote:
       "Bristi demonstrated exceptional technical skills throughout her internship at Walmart Global Tech. She developed robust PySpark pipelines that improved our GCP storage efficiency by 42%, and her ability to integrate GenAI APIs into internal tooling showed remarkable breadth. Her work ethic, attention to detail, and collaborative spirit made her an invaluable member of the team.",
     name: 'Walmart Global Tech',
-    title: 'SDE Intern Manager, Bengaluru',
+    title: 'SDE Intern, Bengaluru',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Walmart_Spark.svg/240px-Walmart_Spark.svg.png'
   },
-  {
-    quote:
-      "Working with Bristi at Titans AI was a fantastic experience. She delivered production-grade RAG pipelines using OpenAI and LangChain that exceeded client expectations. Her ability to add multimodal features — including YouTube search and audio input — combined with her responsive Next.js UI work showed rare full-stack AI capability.",
-    name: 'Sam Yokubbaev',
-    title: 'Founder & CEO at TitansAI',
-    image: 'https://media.licdn.com/dms/image/v2/D4D03AQGoDqDp5J5T0Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726475196640?e=1755734400&v=beta&t=D7IMEugFya1wjiMZ9o1aAjZBZ8TciCVSpu4kAjtVTOs'
-  },
+  // {
+  //   quote:
+  //     "Working with Bristi at WeekendSync was a fantastic experience. She delivered production-grade RAG pipelines using OpenAI and LangChain that exceeded client expectations. Her ability to add multimodal features — including YouTube search and audio input — combined with her responsive Next.js UI work showed rare full-stack AI capability.",
+  //   name: 'Sam Yokubbaev',
+  //   title: 'Founder & CEO at WeekendSync',
+  //   image: 'https://media.licdn.com/dms/image/v2/D4D03AQGoDqDp5J5T0Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726475196640?e=1755734400&v=beta&t=D7IMEugFya1wjiMZ9o1aAjZBZ8TciCVSpu4kAjtVTOs'
+  // },
   {
     quote:
       "Bristi's Multi-Agent RAG system for medical content showed extraordinary depth of knowledge. Her evaluation framework achieved over 80% coverage and 85% citation accuracy. She thinks end-to-end — from data ingestion to evaluation — which is exactly what a senior data science engineer should do.",
@@ -193,27 +193,27 @@ export const workExperience = [
     className: 'md:col-span-2',
     thumbnail: '/exp1.svg',
   },
-  {
-    id: 2,
-    title: 'Software Developer Freelancer — Titans AI',
-    desc: 'Delivered production RAG pipelines and chatbots with OpenAI & LangChain. Built multimodal features and SaaS frontend with Next.js.',
-    className: 'md:col-span-2',
-    thumbnail: '/exp2.svg',
-  },
-  {
-    id: 3,
-    title: 'AI/ML Engineer — Multi-Agent RAG System',
-    desc: 'Architected a 5-agent RAG workflow for medical content with ChromaDB, Hugging Face, and Gemini API achieving >85% citation accuracy.',
-    className: 'md:col-span-2',
-    thumbnail: '/exp3.svg',
-  },
-  {
-    id: 4,
-    title: 'LLM Fine-Tuning Research — QLoRA',
-    desc: 'Fine-tuned LLaMA-2-7B with QLoRA (4-bit NF4), reducing trainable params by 99%. Used TRL SFTTrainer and TensorBoard for evaluation.',
-    className: 'md:col-span-2',
-    thumbnail: '/exp4.svg',
-  },
+  // {
+  //   id: 2,
+  //   title: 'Software Developer Freelancer — Titans AI',
+  //   desc: 'Delivered production RAG pipelines and chatbots with OpenAI & LangChain. Built multimodal features and SaaS frontend with Next.js.',
+  //   className: 'md:col-span-2',
+  //   thumbnail: '/exp2.svg',
+  // },
+  // {
+  //   id: 3,
+  //   title: 'AI/ML Engineer — Multi-Agent RAG System',
+  //   desc: 'Architected a 5-agent RAG workflow for medical content with ChromaDB, Hugging Face, and Gemini API achieving >85% citation accuracy.',
+  //   className: 'md:col-span-2',
+  //   thumbnail: '/exp3.svg',
+  // },
+  // {
+  //   id: 4,
+  //   title: 'LLM Fine-Tuning Research — QLoRA',
+  //   desc: 'Fine-tuned LLaMA-2-7B with QLoRA (4-bit NF4), reducing trainable params by 99%. Used TRL SFTTrainer and TensorBoard for evaluation.',
+  //   className: 'md:col-span-2',
+  //   thumbnail: '/exp4.svg',
+  // },
 ]
 
 export const socialMedia = [
@@ -222,11 +222,11 @@ export const socialMedia = [
     img: '/git.svg',
     link: 'https://github.com/bristiHalder',
   },
-  {
-    id: 2,
-    img: '/twit.svg',
-    link: 'https://leetcode.com/u/bristiHalder/',
-  },
+  // {
+  //   id: 2,
+  //   img: '/twit.svg',
+  //   link: 'https://leetcode.com/u/bristiHalder/',
+  // },
   {
     id: 3,
     img: '/link.svg',
