@@ -62,7 +62,7 @@ const Hero = () => {
               className='text-center text-[40px] md:text-5xl lg:text-6xl'
             />
 
-            <p className='text-center md:tracking-wider mt-4 mb-4 text-sm md:text-lg lg:text-3xl'>
+            <p className='text-center md:tracking-wider mt-4 mb-4 text-sm md:text-lg lg:text-xl'>
               Hi! I&apos;m Bristi Halder, an AI/ML Engineer &amp; Data Scientist <br /> building intelligent, data-driven solutions.
             </p>
 
