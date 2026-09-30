@@ -1,13 +1,26 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Manrope, Instrument_Serif } from 'next/font/google'
 import './globals.css'
-import { ThemeProvider } from './provider'
 
-const inter = Inter({ subsets: ['latin'] })
+const manrope = Manrope({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  display: 'swap',
+})
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ['latin'],
+  weight: '400',
+  style: ['normal', 'italic'],
+  variable: '--font-serif',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
-  title: "Bristi Halder | AI/ML Engineer & Data Scientist",
-  description: 'Portfolio of Bristi Halder — AI/ML Engineer, Data Scientist, and SDE Intern at Walmart Global Tech. Specializing in LLMs, RAG systems, and scalable data pipelines.',
+  title: 'Bristi Halder | AI/ML Engineer & Data Scientist',
+  description:
+    'Portfolio of Bristi Halder, an AI/ML engineer and data scientist building RAG systems, fine-tuned LLMs, and scalable data pipelines. SDE Intern at Walmart Global Tech.',
+  icons: { icon: '/favicon.png', apple: '/apple-touch-icon.png' },
 }
 
 export default function RootLayout({
@@ -16,20 +29,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en' suppressHydrationWarning>
-      <head>
-        <link rel='icon' href='/favicon.png' sizes='any' />
-      </head>
-      <body className={inter.className}>
-        <ThemeProvider
-          attribute='class'
-          defaultTheme='dark'
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
-      </body>
+    <html lang='en' className={`${manrope.variable} ${instrumentSerif.variable}`}>
+      <body className='font-sans'>{children}</body>
     </html>
   )
 }

@@ -4,82 +4,125 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 10% 3.9%;
-
-    --radius: 0.5rem;
+    --paper: #ffffff;
+    --surface: #ffffff;
+    --ink: #14161f;
+    --muted: #5b6070;
+    --line: #e3e5ec;
+    --accent: #5a3fe6;
+    --accent-rgb: 90 63 230;
+    --accent-ink: #3b27b3;
+    --accent-tint: #ece8ff;
+    --accent-tint-rgb: 236 232 255;
+    --mint: #dff5ee;
+    --mint-ink: #0f6b55;
   }
 
-  .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
+  html {
+    scroll-behavior: smooth;
   }
-}
 
-@layer base {
-  * {
-    @apply border-border !scroll-smooth;
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
   }
+
   body {
-    @apply bg-background text-foreground;
+    background-color: var(--paper);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
-  button {
-    @apply active:outline-none;
+
+  ::selection {
+    background: var(--accent-tint);
+    color: var(--accent-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
   }
 }
 
-@layer utilities {
-  .heading {
-    @apply font-bold text-4xl md:text-5xl text-center;
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-[1280px] px-5 sm:px-6;
+  }
+
+  .display {
+    @apply font-serif tracking-[-0.01em];
+  }
+
+  .section-title {
+    @apply display text-[2.25rem] leading-[1.05] text-ink sm:text-5xl;
+  }
+
+  .lede {
+    @apply text-base leading-relaxed text-muted sm:text-lg;
+  }
+
+  .chip {
+    @apply inline-flex items-center rounded-full border border-line bg-surface px-3 py-1 text-[13px] font-medium text-ink;
+  }
+
+  .chip-accent {
+    @apply inline-flex items-center rounded-full bg-accent-tint px-3 py-1 text-[13px] font-semibold text-accent-ink;
+  }
+
+  .card {
+    @apply rounded-2xl border border-line bg-surface;
+  }
+
+  /* Lines the first carousel card up with the content column. */
+  .carousel-inset {
+    padding-left: 1.25rem;
+  }
+  @media (min-width: 640px) {
+    .carousel-inset {
+      padding-left: calc(max(0px, (100vw - 1280px) / 2) + 1.5rem);
+    }
+  }
+
+  /* Dark section that sits inside the light page. */
+  .dark-panel {
+    @apply bg-ink text-white;
+  }
+  .dark-panel .section-title {
+    @apply text-white;
+  }
+  .dark-panel .lede {
+    @apply text-white/65;
+  }
+  .dark-panel .grid.border-t {
+    @apply border-white/15;
+  }
+
+  /* Header colours while it floats over a dark panel. */
+  .nav-dark a,
+  .nav-dark button {
+    @apply text-white;
+  }
+  .nav-dark nav a:not([href^='http']) {
+    @apply text-white/65 hover:text-white;
+  }
+  .nav-dark nav a[href^='http'] {
+    @apply border-white hover:bg-white hover:text-ink;
+  }
+  .nav-dark .nav-active {
+    @apply text-white;
+  }
+
+  .card-lift {
+    @apply transition-[transform,box-shadow,border-color] duration-300 ease-out hover:-translate-y-1 hover:border-accent/40 hover:shadow-lift;
   }
 }
